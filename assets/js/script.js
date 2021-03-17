@@ -4,6 +4,7 @@ var tasksToDoEl= document.querySelector("#tasks-to-do");
 var createTaskHandler= function(event) {
 
     event.preventDefault();
+    var taskNameHandler= document.querySelector("input[name='task-name']");
 
     var listItemEl= document.createElement("li");
     listItemEl.className= "task-item";
